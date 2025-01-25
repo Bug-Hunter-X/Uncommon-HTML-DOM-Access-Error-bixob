@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <script>
+    // Correct way to access an element. Checks for existence before accessing.
+    const myDiv = document.getElementById('myDiv');
+    if (myDiv) {
+      myDiv.style.display = 'none';
+    } else {
+      console.log('Element not found!'); //Handle case where element doesn't exist
+    }
+  </script>
+</body>
+</html>
