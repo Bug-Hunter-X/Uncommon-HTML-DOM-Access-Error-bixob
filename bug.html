@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <script>
+    // Incorrect way to access an element that might not exist.
+    // This can cause an error in some browsers.   
+    document.getElementById('myDiv').style.display = 'none';
+  </script>
+</body>
+</html>
